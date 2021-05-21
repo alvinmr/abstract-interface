@@ -16,7 +16,7 @@ public class Main {
     static void welcome() {
         Scanner scanner = new Scanner(System.in);
         try {
-            Console.log("Selamat datang pada game pertarungan dunia lain");
+            Console.log("Selamat datang pada game Petualangan pemuda");
             Console.log("Pertama tama masukkan namamu");
             System.out.print("Masukkan nama mu : ");
             namePlayer = scanner.nextLine();
@@ -33,16 +33,16 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
 
         // Membuat 3 monster
-        monster[0] = new Monster("Great Stone", 500);
-        monster[1] = new Monster("Dumble Gore", 730);
-        monster[2] = new Monster("Hert Mage", 1200);
+        monster[0] = new Monster("Slime Stone", 500);
+        monster[1] = new Monster("Voodoocat", 730);
+        monster[2] = new Monster("Plaguedeviation", 1200);
 
         // Membuat 5 spell untuk menyerang
-        spell[0] = new Spell("Fire Horn", 10);
-        spell[1] = new Spell("Lighting Thunder", 15);
-        spell[2] = new Spell("Wind Spacing", 32);
-        spell[3] = new Spell("Earhquake", 40);
-        spell[4] = new Spell("Water Splash", 43);
+        spell[0] = new Spell("Runic Wave", 10);
+        spell[1] = new Spell("Unholy Whip", 15);
+        spell[2] = new Spell("Rain of Sealing", 32);
+        spell[3] = new Spell("Perversion of Glory", 40);
+        spell[4] = new Spell("Fortitude of Venom", 43);
 
         welcome();
         Player player = new Player(namePlayer);
@@ -75,7 +75,7 @@ public class Main {
                                 Console.log("Health Monster : " + monster[iterate].health);
                                 System.out.println("=============================");
                                 Console.log("Serang dengan spell terkuatmu");
-                                Console.log("List Spell yang bisa digunakan : ");
+                                Console.log("LDaftar Spell yang bisa digunakan : ");
 
                                 for (int i = 1; i <= spell.length; i++) {
                                     System.out.println("[" + i + "] " + spell[i - 1].name);
